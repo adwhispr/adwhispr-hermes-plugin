@@ -27,7 +27,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405
         with:
-          python-version: "3.11"
+          python-version: "3.14"
 
       - name: Validate JSON
         run: |
@@ -37,7 +37,7 @@ jobs:
       - name: Validate with Hermes
         run: |
           pip install -e hermes-agent
-          hermes plugins validate plugin
+          hermes plugins validate --install-deps plugin </dev/null
 
       - name: Every skill has a matching name
         run: |

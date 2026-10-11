@@ -27,7 +27,7 @@ If the adwhispr server shows as needing authentication, or a tool call fails wit
 
 ## Launching
 
-- `launch_tiktok_campaign` takes the user's own video live (created paused) by creativeName from the Creative Library (`list_my_creatives`); uploads happen at https://adwhispr.com/dashboard/creatives.
+- `launch_tiktok_campaign` takes the user's own video live (created paused) by creativeName from the Creative Library (`list_my_creatives`); uploads happen at https://adwhispr.com/dashboard/creatives?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin.
 - Objectives include video_views (TikTok only) plus the standard set; sales/conversion campaigns need a TikTok pixel — `search_ad_targeting` kind pixels lists them with their conversion events.
 - Targeting: interests/locations/audiences via `search_ad_targeting` platform tiktok.
 

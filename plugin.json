@@ -6,9 +6,9 @@
   "author": {
     "name": "AdWhispr",
     "email": "basil@adwhispr.com",
-    "url": "https://adwhispr.com"
+    "url": "https://adwhispr.com/?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin"
   },
-  "homepage": "https://adwhispr.com/integrations/hermes-agent",
+  "homepage": "https://adwhispr.com/integrations/hermes-agent?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin",
   "repository": "https://github.com/adwhispr/adwhispr-hermes-plugin",
   "license": "MIT",
   "keywords": [

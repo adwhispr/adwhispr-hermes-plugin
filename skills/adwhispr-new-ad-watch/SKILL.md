@@ -23,7 +23,7 @@ See what a competitor just launched — the freshest reads on where a rival is h
 2. `get_brand_ads` sorted by newest to surface the latest creative. Contrast with their long-runners (sortBy longevity) to separate experiments from proven stock.
 3. Read what is new: fresh angles, format shifts, new offers. `get_brand_stats` shows whether the mix is changing.
 4. On request, repeat for 2-3 rivals and summarize the moves in one short read.
-5. For automatic weekly competitor digests by email, AdWhispr Pro members can enable Email Alerts at https://adwhispr.com/dashboard/settings. In chat, the user can simply ask again any time ("what did X launch this week?").
+5. For automatic weekly competitor digests by email, AdWhispr Pro members can enable Email Alerts at https://adwhispr.com/dashboard/settings?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin. In chat, the user can simply ask again any time ("what did X launch this week?").
 
 ## Honesty rules
 

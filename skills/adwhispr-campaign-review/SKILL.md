@@ -38,4 +38,4 @@ A good review answers three questions in plain language: what is spending, what 
 
 There is no scheduler in this connection, but two good habits work well:
 - The user can simply ask for a review any time ("Monday review, please") and you run the workflow fresh.
-- For automatic weekly competitor digests by email, AdWhispr Pro members can flip the toggle at https://adwhispr.com/dashboard/settings under Email Alerts. That digest covers tracked competitors' ad changes, not the user's own campaign numbers.
+- For automatic weekly competitor digests by email, AdWhispr Pro members can flip the toggle at https://adwhispr.com/dashboard/settings?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin under Email Alerts. That digest covers tracked competitors' ad changes, not the user's own campaign numbers.

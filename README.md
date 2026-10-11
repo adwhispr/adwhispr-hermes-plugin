@@ -106,8 +106,8 @@ hermes plugins validate .
 
 ## Support and security
 
-- Website: [adwhispr.com](https://adwhispr.com)
-- Docs: [adwhispr.com/docs](https://adwhispr.com/docs)
+- Website: [adwhispr.com](https://adwhispr.com/?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin)
+- Docs: [adwhispr.com/docs](https://adwhispr.com/docs?utm_source=hermes&utm_medium=plugin&utm_campaign=hermes_plugin)
 - Issues: [GitHub Issues](https://github.com/adwhispr/adwhispr-hermes-plugin/issues)
 - Security reports: [SECURITY.md](SECURITY.md)
 

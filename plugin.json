@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "adwhispr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Competitor ad research, ad cloning, and campaign execution: find who is advertising in any niche right now, surface their longest-running Meta and TikTok ads and Instagram content, clone a winner into a finished image or video for your brand, then launch and manage paused campaigns on Meta, Google, TikTok, X, and ChatGPT Ads.",
   "author": {
     "name": "AdWhispr",
@@ -25,5 +25,14 @@
     "instagram",
     "keyword-research",
     "mcp"
-  ]
+  ],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "adwhispr": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
 }

@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented in this file.
 
+## 1.0.1 - 2026-10-12
+
+- Mark the AdWhispr server `untrusted` for Hermes, so Hermes asks before every write or spend tool (launches, budget and targeting changes, resume, video render approval) and refuses them in cron and headless runs. Read-only research tools, annotated `readOnlyHint: true` by the server, keep running without a prompt. (Catalog review feedback.)
+
 ## 1.0.0 - 2026-10-11
 
 - Initial Hermes Agent distribution with twenty-four skills across competitor ad research, ad cloning, and campaign execution.

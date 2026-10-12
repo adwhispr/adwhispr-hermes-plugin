@@ -40,6 +40,8 @@ Load `adwhispr-get-started` for a first run, or `adwhispr-agent` for the safety 
 
 ## Safety contract
 
+`plugin.json` marks the AdWhispr server `untrusted` for Hermes (`extensions.com.nousresearch.hermes.servers.adwhispr.trust`). Hermes therefore asks you before every AdWhispr tool that is not annotated read-only, and refuses those tools in cron and headless runs. The research and read tools carry MCP `readOnlyHint: true` on the server, so they run without a prompt.
+
 AdWhispr manages advertising accounts that can spend real money and makes videos that cost credits. The bundled skills require the agent to:
 
 - create every campaign **paused**; nothing spends until the user resumes it;
@@ -95,6 +97,8 @@ Why a bridge? Agent Plugins v1 has no portable field for OAuth on a remote MCP e
 ## Scheduled work
 
 Hermes can run recurring jobs with its `cronjob` tool, for example a Monday campaign review (`adwhispr-campaign-review`) or a weekly look at what a competitor launched (`adwhispr-new-ad-watch`). Scheduled runs use AdWhispr calls like an interactive session; weekly is a sensible default.
+
+Scheduled runs are read-only. The plugin marks the AdWhispr server `untrusted` (see below), so Hermes refuses every tool that can write or spend in a cron or headless run. A scheduled brief can report and recommend; launching, budget changes, resuming and video renders happen only in an interactive session where you approve them.
 
 ## Development
 

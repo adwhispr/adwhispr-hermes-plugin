@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           repository: NousResearch/hermes-agent
-          ref: 0aa764feddf00aed631019763ef777d38faf4335
+          ref: f128052e51e40264d146df44b5e72b4a47be4b5e
           path: hermes-agent
 
       - name: Set up Python
@@ -35,9 +35,13 @@ jobs:
           jq -e . plugin/mcp.json >/dev/null
 
       - name: Validate with Hermes
+        shell: bash
         run: |
+          set -o pipefail
           pip install -e hermes-agent
-          hermes plugins validate --install-deps plugin </dev/null
+          hermes plugins validate --install-deps plugin </dev/null | tee validate.log
+          # Catalog review: the server must stay untrusted so write tools prompt.
+          grep -q "server trust: adwhispr.*untrusted" validate.log
 
       - name: Every skill has a matching name
         run: |
